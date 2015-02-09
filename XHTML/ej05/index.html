@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rellena tu CV</title>
+</head>
+<body>
+	<h1>Rellena tu CV</h1>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+		
+		<div>
+			<label for="1">Nombre</label>
+			<br>
+			<input type="text" name="nombre" size="20" id="1">
+		</div>
+		<div>
+			<label for="2">Apellidos</label>
+			<br>
+			<input type="text" name="apellidos" size="60" id="2">
+		</div>
+		<div>
+			<label for="3">Contraseña</label>
+			<br>
+			<input type="password" name="password" size="20" id="3">
+		</div>
+		<div>
+			<label for="4">DNI</label>
+			<br>
+			<input type="text" name="dni" size=9 maxlength="9" id="4">
+		</div>
+		<div>
+			<span>Sexo</span>
+			<br>
+			<input type="radio" name="sexo" value="hombre" checked id="5">
+			<label for="5">Hombre</label> 
+			<input type="radio" name="sexo" value="mujer" id="6"> 
+			<label for="6">Mujer</label>
+		</div>
+		<br>
+		<div>
+			<label for="7">Incluir mi foto</label>
+			<input type="file" name="foto" id="7">
+		</div>
+		<br>
+		<div>
+			<input type="checkbox" name="suscribirse" value="1" checked id="8">
+			<label for="8">Suscribirme al boletín de novedades</label> 
+		</div>
+		<br>
+		<input type="submit" name="enviar" value="Guardar cambios">
+		<input type="reset" name="reset" value="Borrar los datos introducidos">
+
+	</form>
+
+	
+</body>
+</html>

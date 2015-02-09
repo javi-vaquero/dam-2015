@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+		<h1>Información sobre el producto</h1>
+		<fieldset>
+			<legend>Datos básicos</legend>
+			<div>
+				<label for="1">Nombre</label>
+				<br>
+				<input type="text" name="nombre" id="1">
+			</div>
+			<div>
+				<label for="2">Descripción</label>
+				<br>
+				<textarea name="descripcion" id="2" cols="30" rows="10"></textarea>
+			</div>
+			<div>
+				<label for="3">Foto</label>
+				<input type="file" name="foto" id="3">
+			</div>
+			<div>
+				<input type="checkbox" name="contador" value="1" checked id="4">
+				<label for="4">Añadir contador de visitas</label> 
+			</div>			
+		</fieldset>
+
+			
+		<fieldset>
+						<legend>Datos económicos</legend>
+			<div>			
+				<label for="5">Precio </label>
+				<input type="text" name="precio" id="5">
+				<label for="5"> € </label>
+			</div>
+			<div>			
+				<label for="6">Impuestos </label>
+				<select name="impuestos[]" id="6" size="3" multiple>
+					<option value="4">4%</option>
+					<option value="10">10%</option>
+					<option value="21">21%</option>
+				</select>
+			</div>
+			<div>
+				<span>Promoción</span>
+				<br>
+				<input type="radio" name="promo" value="0" checked id="7">
+				<label for="7">Ninguno</label>
+				<br>
+				<input type="radio" name="promo" value="1" id="8">
+				<label for="8">Transporte gratuito</label>
+				<br>
+				<input type="radio" name="promo" value="2" id="9">
+				<label for="9">Descuento 5%</label>
+			</div>			
+		</fieldset>
+		<input type="submit" name="enviar" value="Enviar">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+</html>
