@@ -5,8 +5,73 @@
 	<title>My webblog</title>
 </head>
 <body>
-	<div class="whiteFont blackBackground">
-		<p>My Weblog</p>
+	<div class="wrapper">
+		<div class="header">
+			<h1>My Weblog</h1>
+			<p>A lot of effort blablabla</p>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="articles">
+				<div class="article">
+					<h2><a href="post.html">Travel Day</a></h2>
+					<span>October 22, 2011</span>
+					<span>
+						<a href="author.html">John Doe</a>
+						,
+						<a href="post.html#comments">3 comments</a>
+					</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti architecto eos nihil quidem est totam facilis, repellat voluptatibus deserunt, ullam, corporis quo nobis atque. Facilis ab, dolor ducimus praesentium reiciendis!</p>
+
+				</div>
+				<div class="article">
+					<h2><a href="post2.html">I'm going to Prague</a></h2>
+					<span>October 22, 2011</span>
+					<span>
+						<a href="author.html">John Doe</a>
+						,
+						<a href="post2.html#comments">5 comments</a>
+					</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti architecto eos nihil quidem est totam facilis, repellat voluptatibus deserunt, ullam, corporis quo nobis atque. Facilis ab, dolor ducimus praesentium reiciendis!</p>
+				</div>
+			</div>
+			<div class="archive">
+				<ol>
+					<li>
+						<span>October</span>
+						<ol>
+							<li><span>5 <span><a href="#">blablabla</a></span></span></li>
+						</ol>						
+					</li>
+					<li>
+						<span>September</span>
+						<ol>
+							<li><span>10 <span><a href="#">blablabla2</a></span></span></li>
+							<li><span>21 <span><a href="#">blablabla3</a></span></span></li>
+						</ol>
+					</li>
+					<li>
+						<span>June</span>
+						<ol>
+							<li><span>17 <span><a href="#">blablabla4</a></span></span></li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="footer">
+			<span>&copy;2011 <a href="#">John Doe</a></span>
+		</div>
+	</div>
+
+<!--
+	<div class="header">
+		<h1>My Weblog</h1>
 		<p>A lot of effort blablabla</p>
 		<p>
 			<a href="#">home</a>
@@ -15,25 +80,21 @@
 			<a href="#">about</a>
 		</p>
 	</div>
-	<div class="container">
-		<div class="whiteBackground">
+	<div class="container whiteBackground">
+		<div class="article">
 			<span class="titleFont"><a href="./prague.html">Prague</a></span>
 			<span class="dateFont">20.10.2014</span>
-			<div class="smallBlueFont">
-				<a href="#">John Doe</a>,<a href="#">5 comments</a>
-			</div>
+			<span class="smallBlueFont rightText"><a href="#">John Doe</a>,<a href="#">5 comments</a></span>
 			<div class="articleFont">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quam, adipisci ullam! Ipsum veritatis nam, id, assumenda eius nihil rem ea repellendus debitis, reiciendis fuga ipsa quis vero ab quam!
 				</p>
 			</div>
 		</div>
-		<div class="whiteBackground">
+		<div class="article">
 			<span class="titleFont"><a href="#">Lisbon</a></span>
-			<span class="dateFont">17.10.2014</span>
-			<div class="smallBlueFont">
-				<a href="#">John Doe</a>,<a href="#">3 comments</a>
-			</div>
+			<span class="dateFont rightText">17.10.2014</span>
+			<span class="smallBlueFont"><a href="#">John Doe</a>,<a href="#">3 comments</a></span>
 			<div class="articleFont">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quos consectetur error enim officiis soluta eum explicabo, esse nihil corporis natus doloremque delectus iste perspiciatis non totam? Maiores, animi, eius.
@@ -41,19 +102,19 @@
 			</div>
 		</div>
 		<div class="history">
-			<span class="titleFont indentMonth">October</span>
+			<span class="titleFont indentMonth newLine">October</span>
 			<span class="titleFont indentDay">5</span>			
-			<span class="blueFont"><a href="#"> enlace 1</a></span>
-			<span class="titleFont indentMonth">September</span>
+			<span class="blueFont newLine"><a href="#"> enlace 1</a></span>
+			<span class="titleFont indentMonth newLine">September</span>
 			<span class="indentDay">21</span>			
-			<span class="blueFont"><a href="#"> enlace 2</a></span>
+			<span class="blueFont newLine"><a href="#"> enlace 2</a></span>
 			<span class="indentDay">10</span>			
-			<span class="blueFont"><a href="#"> enlace 3</a></span>
+			<span class="blueFont newLine"><a href="#"> enlace 3</a></span>
 		</div>
 		<div class="copyright">
 			<span class="articleFont">&copy;2011 </span>
 			<span class="blueFont"><a href="#">John Doe</a></span>
 		</div>
-	</div>
+	</div>-->
 </body>
 </html>
