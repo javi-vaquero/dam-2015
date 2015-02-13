@@ -174,3 +174,34 @@ a:active {
 	padding-bottom:10px;
 	margin-bottom:10px;
 }
+table{
+	width: 100%;
+	border-collapse: collapse;
+
+}
+.data-table{
+		border: 3px solid #CCC;
+}
+.data-table th,
+.data-table td{
+	padding: 3px 5px;
+}
+
+thead, tfoot{
+	background-color: #CCC;
+	font-weight: bold;
+}
+.data-table th{
+	text-align: left;
+}
+
+.txt-right{
+	text-align: right;
+}
+.price-th{
+	width: 70px;
+}
+
+.data-table tbody tr{
+	border-bottom: 1px solid #CCC;
+}
