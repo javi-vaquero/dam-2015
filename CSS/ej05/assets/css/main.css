@@ -168,3 +168,9 @@ a:active {
 .img-responsive{
 	max-width: 100%;
 }
+
+.bottomBorder{
+	border-bottom:1px solid #CCC;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
