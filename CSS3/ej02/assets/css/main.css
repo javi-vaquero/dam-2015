@@ -3,7 +3,9 @@ html, body {
 	height: 100%;	
 }
 body{
-	background-image: url('../img/ribbon.png'), url('../img/decoration.png'), url('../img/old_paper.jpg');
+	/*background-image: url('../img/ribbon.png'), url('../img/decoration.png'), url('../img/old_paper.jpg');*/
+	background-image: url('../img/ribbon.png'), url('../img/decoration.png'), url('../img/old_paper_cropped.jpg');
 	background-repeat: no-repeat;
 	background-position: bottom right, top left, center center;
+	background-size: auto, auto, cover;/*contain;*/
 }
