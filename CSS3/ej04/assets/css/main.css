@@ -1,4 +1,4 @@
-#container { width: 500px; height:500px; position: relative;}
+.container { width: 500px; height:500px; position: relative;}
         .box {
             width: 100px;
             height: 100px;
@@ -7,10 +7,10 @@
             position:absolute;
             padding: 5px;
 
-            transition-property: background-color, color, transform; 
-            transition-duration: 50ms, 100ms, 1000ms;
+            transition-property: background-color, color, transform;
+            transition-duration: 900ms, 400ms, 4000ms;
             transition-timing-function: linear;
-            transition-delay: 0, 1200ms, 2200ms;
+            transition-delay: 50ms, 1000ms, 2000ms;
         }
 
         .box:hover {
