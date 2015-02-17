@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+}
+.container{
+    background: #666 url('../img/ej03_tree.jpg') no-repeat -60px 0;
+    width: 420px;
+    height: 480px;
+    position: relative;
+}
+.snowflake {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    animation-name: snow, fade;
+    animation-iteration-count: infinite, infinite;
+    
+}
+.snowflake.f1 {
+    left: 40px;
+
+    animation-duration: 10s, 10s;
+}
+.snowflake.f2 {
+    font-size: 1.8em;
+    left: 120px;
+
+    animation-duration: 12s, 12s;
+}
+.snowflake.f3 {
+    left: 200px;
+    animation-duration: 11s, 11s;
+}
+.snowflake.f4 {
+    font-size: 1.5em;
+    left: 280px;
+    animation-duration: 10.5s;
+}
+
+@keyframes snow{
+    from {
+        top: 0%;
+    }
+    20% {
+        transform: translate(25px,20%) rotate(45deg);
+    }
+    40% {
+        transform: translate(-35px,40%) rotate(-15deg);
+    }
+    60% {
+        transform: translate(28px,60%) rotate(10deg);
+    }
+    80% {
+        transform: translate(-15px,80%) rotate(-27deg);
+    }
+    to {
+        top:100%;
+    }
+}
+@keyframes fade{
+    from {
+        opacity:1;
+    }
+    50%{
+        opacity:0.9;
+    }
+    70%{
+        opacity:0.6;
+    }
+    to {
+        opacity:0;
+    }
+}
