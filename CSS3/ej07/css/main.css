@@ -5,7 +5,7 @@
     margin: 5em;
 }
 
-#clock {
+.clock {
     position: relative;
     width: 378px;
     height: 378px;
@@ -14,12 +14,40 @@
     margin: 5em 0 0 -189px;
 }
 
-#clock div {
+.clock div {
     position: absolute;
 }
 
+.second {
+    animation-name: aguja;
+    /*animation-duration: 500ms;*/
+    animation-duration: 60s;
+    animation-timing-function: steps(60);
+    animation-iteration-count: infinite;
+}
+
+.minute {
+    animation-name: aguja;
+    /*animation-duration: 30s;*/
+    animation-duration: 3600s;
+    animation-timing-function: steps(60);
+    animation-iteration-count: infinite;
+}
+
+.hour {
+    animation-name: aguja;
+    /*animation-duration: 360s;*/
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 /* ANIMACIONES Y TRANSFORMACIONES */
-@keyframe aguja{
-    
+@keyframes aguja{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
