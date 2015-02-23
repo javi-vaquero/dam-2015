@@ -1,24 +1,21 @@
 (function() {
     var validarDNI = function(dni) {
-        
+
         var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-        
-        var ok=false;
 
-        //dni.match(/^[0-9]{8}{a-zA-Z}$/);
+        var syntax_ok = false;
 
-        if(dni && typeof dni === "string" && dni.length===9){
-        	var mNum = parseInt(dni);
+        syntax_ok = /^[0-9]{8}[a-zA-Z]$/.test(dni);
 
-        	if(mNum>=0 && mNum<=99999999){
-        		var mChar = dni.charAt(length-1).toUpperCase();
+        if (syntax_ok) {
 
-        		ok = (mChar === letras[mNum%23]);
-        	}
+            var mNum = parseInt(dni);
+            var mChar = dni.charAt(length - 1).toUpperCase();
+            syntax_ok = (mChar === letras[mNum % 23]);
         }
-        return ok;
+        return syntax_ok;
 
-      
+
     };
     console.log(validarDNI("12345678A") === false);
     console.log(validarDNI("44556533J") === true);
