@@ -16,10 +16,17 @@ body {font-family: arial, helvetica;}
     textarea {
         width: 360px;
     }
-    input[type="checkbox"] {
+    input[type="checkbox"]{
         margin-left: 200px;
+    }
+    input[type="radio"] {
+        margin: 30px 0 0 100px;
     }
     input[type="submit"] {
         margin: 20px 0 0 200px;
         display: block;
+    }
+
+    .error{
+        background-color: #C00;
     }

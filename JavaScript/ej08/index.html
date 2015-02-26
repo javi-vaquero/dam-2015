@@ -20,9 +20,14 @@
             <label for="registro_password" class="required">Password:</label>
             <input type="password" name="password" id="registro_password">
             <label for="registro_comentarios">Comentarios:</label>
-            <textarea name="comentarios" id="registro_comentarios" rows="10"></textarea>
-            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1" class="required">
+            <textarea name="comentarios" id="registro_comentarios" rows="10" class="required maxCharacters"></textarea>
+            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1" class="required">   
             <label for="registro_condiciones">Acepto las condiciones del servicio.</label>
+
+            <input type="radio" name="radio1" id="radio11" value="1" class="required"/>Option 1
+            <input type="radio" name="radio1" id="radio12" value="2" class="required"/>Option 2
+            <input type="radio" name="radio1" id="radio13" value="3" class="required"/>Option 3
+
             <input type="submit" value="Enviar">
         </fieldset>
     </form>
