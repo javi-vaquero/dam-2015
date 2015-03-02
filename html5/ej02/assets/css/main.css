@@ -1,0 +1,17 @@
+.video-wrapper{
+	border: 2px solid #000;
+	width:80%;
+}
+.video{
+	width: 80%;
+}
+#video{
+	width: 100%;
+}
+.playlist{
+	width:15%;
+}
+
+.fleft{
+	float: left;
+}
