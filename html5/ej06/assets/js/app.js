@@ -1,7 +1,7 @@
 (function(){
 	console.log ("Geolocation...");
 
-	navigator.Geolocation.getCurrentPosition(function(position){
+	navigator.geolocation.getCurrentPosition(function(position){
 		console.log(position);
 	});
 })();
